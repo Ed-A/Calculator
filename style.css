@@ -4,30 +4,23 @@ body{
 }
 
 #display {
-  height: 105px;
-  width: 95%;
+  width: 360px;
   margin-bottom: 17.5px;
   text-align: right;
-  background-color:  hsl(0, 0%, 10%);
   padding: 0 10px 0 0;
   font-size: larger;
   color: white;
   padding-right: 10px;
+  overflow-wrap: anywhere;
+  height: fit-content;
 }
 
 #symbol {
-  height: 70px;
-  width: 70px;
-  border: 3.5px solid black;
-  background-color: hsl(0, 0%, 97%);
-  text-align: center;
-  margin-bottom: 17.5px;
-  font-weight: bold;
-  color: hsl(0, 0%, 20%);
+  display: none;
 }
 
 #calculator {
-  background-color: hsl(0, 0%, 10%);
+  border-radius: 50px;
   padding: 35px;
   width: fit-content;
   margin: auto;
@@ -40,17 +33,16 @@ button {
   width: 80.5px;
   height: 84px;
   padding: 0;
-
   border-radius: 40.25px;
   font-size: xx-large;
   border-width: 0px;
 }
 
-
 .o-btn{
   background-color: orange;
   color: white;
   font-size: xx-large;
+  transition: background-color 0.1s ease-in;
 }
 
 .o-btn:active{
@@ -69,4 +61,14 @@ button {
 .n-btn{
   background-color: rgb(48, 48, 48);
   color: white;
+}
+
+.n-btn:active{
+  background: white;
+  color: black;
+}
+
+.symbolActive{
+  background: white;
+  color: black;
 }
